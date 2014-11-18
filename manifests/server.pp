@@ -24,7 +24,7 @@ class softec_newrelic::server (
 
   user{'newrelic':
     ensure  => present,
-    gid     => $newrelic_group_gid,
+    gid     => $group_gid,
     uid     => $newrelic_user_uid,
   } ->
 
