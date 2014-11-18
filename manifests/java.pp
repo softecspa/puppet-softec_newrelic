@@ -8,9 +8,9 @@ class softec_newrelic::java (
   validate_absolute_path($newrelic_java_plugin_path)
 
   $plugin_source = $java_version?{
-    '6' => 'puppet:///modules/newrelic/java67_plugin/',
-    '7' => 'puppet:///modules/newrelic/java67_plugin/',
-    '8' => 'puppet:///modules/newrelic/java8_plugin/',
+    '6' => 'puppet:///modules/softec_newrelic/java67_plugin/',
+    '7' => 'puppet:///modules/softec_newrelic/java67_plugin/',
+    '8' => 'puppet:///modules/softec_newrelic/java8_plugin/',
   }
 
   file {$newrelic_java_plugin_path :
